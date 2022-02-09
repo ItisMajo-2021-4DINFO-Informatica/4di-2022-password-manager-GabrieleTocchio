@@ -11,9 +11,13 @@
         <!-- Layout children in two columns -->
         <Grid ColumnDefinitions="*,*">
             <Button Text="Save"
+                    BackgroundColor="Orange"
+                    TextColor="white"
                     Clicked="OnSaveButtonClicked" />
             <Button Grid.Column="1"
+                    BackgroundColor="Orange"
                     Text="Delete"
+                    TextColor="White"
                     Clicked="OnDeleteButtonClicked"/>
         </Grid>
     </StackLayout>

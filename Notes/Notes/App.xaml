@@ -2,5 +2,21 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.App">
+    <Application.Resources>
 
-</Application>
+        <Thickness x:Key= "PageMargin">20</Thickness>
+
+
+
+
+
+
+
+
+
+
+    </Application.Resources>       
+    
+ </Application>   
+    
+    
