@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.Views.NoteEntryPage"
+             Title="Note Entry">
+    <!-- Layout children vertically -->
+    <StackLayout Margin="20">
+        <Editor Placeholder="ServiceName"
+                PlaceholderColor="White"
+                Text="{Binding ServiceName}"
+                TextColor="White"
+                HeightRequest="100" />
+        <Editor Placeholder="Username"
+                PlaceholderColor="White"
+                Text="{Binding Username}"
+                TextColor="White"
+                HeightRequest="100" />
+        <Editor Placeholder="Password"
+                 PlaceholderColor="White"
+                Text="{Binding Password}"
+                TextColor="White"
+                HeightRequest="100" />
+        <Editor Placeholder="URL"
+                 PlaceholderColor="White"
+                Text="{Binding URL}"
+                TextColor="White"
+                HeightRequest="100" />
+        <!-- Layout children in two columns -->
+        <Grid ColumnDefinitions="*,*">
+            <Button Text="Save"
+                     BackgroundColor="DarkOrange"
+                    TextColor="White"
+                    Clicked="OnSaveButtonClicked" />
+            <Button Grid.Column="1"
+                    Text="Delete"
+                     BackgroundColor="darkOrange"
+                    TextColor="White"
+                    Clicked="OnDeleteButtonClicked"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

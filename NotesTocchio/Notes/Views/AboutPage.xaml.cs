@@ -6,6 +6,8 @@ namespace Notes.Views
 {
     public partial class AboutPage : ContentPage
     {
+        private const string Uri = "https://github.com/GabrieleTocchio";
+
         public AboutPage()
         {
             InitializeComponent();
@@ -14,7 +16,7 @@ namespace Notes.Views
         async void OnButtonClicked(object sender, EventArgs e)
         {
             // Launch the specified URL in the system browser.
-            await Launcher.OpenAsync("https://aka.ms/xamarin-quickstart");
+            await Launcher.OpenAsync(Uri);
         }
     }
 }
